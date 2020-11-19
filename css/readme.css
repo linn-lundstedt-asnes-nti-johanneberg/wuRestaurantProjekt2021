@@ -1,0 +1,30 @@
+*{
+    margin:0px;
+}
+
+.index{
+
+    display:grid;
+    width:100vw;
+    height:100vh;
+
+    grid grid-template-areas:
+    "he he he he"
+    "na na na na"
+    "ma ma ma ma"
+    "my my my my"
+    "le le le le"
+    "fo fo fo fo";
+    grid-template-rows: repeat(6,1fr);
+    grid-template-columns: repeat(4,1fr);   
+
+}
+
+.meny{
+
+}
+
+.var_vision{
+
+
+}
