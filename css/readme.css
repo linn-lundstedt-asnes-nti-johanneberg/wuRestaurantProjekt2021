@@ -2,23 +2,53 @@
     margin:0px;
 }
 
-.index{
+#index{
 
     display:grid;
     width:100vw;
     height:100vh;
 
-    grid grid-template-areas:
-    "he he he he"
-    "na na na na"
-    "ma ma ma ma"
-    "my my my my"
-    "le le le le"
-    "fo fo fo fo";
+    grid-template-areas:
+    "he1 he1 he1 he1"
+    "na1 na1 na1 na1"
+    "as1 ma1 ma1 as1"
+    "as1 my1 my1 as1"
+    "as1 le1 le1 as1"
+    "fo1 fo1 fo1 fo1";
     grid-template-rows: repeat(6,1fr);
-    grid-template-columns: repeat(4,1fr);   
-
+    grid-template-columns: repeat(4,1fr); 
 }
+    
+.header1{
+    grid-area: he1;
+}
+
+.navigation1{
+    grid-area: na1;
+}
+
+.aside1{
+    grid-area: as1;
+}
+
+.main1{
+    grid-area: ma1;
+}
+
+#wrapper_for_mysteries1{
+    grid-area: my1;
+}
+
+.legalities1{
+    grid-area: le1;
+}
+
+.footer1{
+    grid-area: fo1;
+}
+
+
+
 
 .meny{
 
