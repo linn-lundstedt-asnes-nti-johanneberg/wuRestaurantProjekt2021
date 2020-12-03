@@ -11,24 +11,41 @@
     grid-template-areas:
     "he1 he1 he1 he1"
     "na1 na1 na1 na1"
-    "as1 ma1 ma1 as1"
-    "as1 my1 my1 as1"
-    "as1 le1 le1 as1"
+    "as1 ma1 ma1 as2"
+    "as1 my1 my1 as2"
+    "as1 le1 le1 as2"
     "fo1 fo1 fo1 fo1";
-    grid-template-rows: repeat(6,1fr);
-    grid-template-columns: repeat(4,1fr); 
+    grid-template-rows: 10% 5% 45% 20% 20% 10%;
+    grid-template-columns: 15% 45% 45% 15%;
+
+    
 }
     
 .header1{
     grid-area: he1;
+    background-color: black;
+    text-decoration-color: cornsilk;
+
+    flex-direction: row;
+    display:flex;
+
 }
 
+img {
+    width:150px;
+}
 .navigation1{
     grid-area: na1;
 }
 
 .aside1{
     grid-area: as1;
+    /*width: 20px; */
+}
+
+.aside2{
+    grid-area: as2;
+    
 }
 
 .main1{
