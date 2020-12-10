@@ -2,6 +2,19 @@
     margin:0px;
 }
 
+.header1, .navigation1{
+    padding: 5px;
+}
+
+
+a:link{
+    color: darkblue;
+}
+
+a:visited{
+    color: darkblue;
+}
+
 #index{
 
     display:grid;
@@ -22,13 +35,13 @@
 }
     
 .header1{
+    
     grid-area: he1;
-    background-color: black;
-    text-decoration-color: cornsilk;
+    background-color:rgb(121, 22, 212);
 
     flex-direction: row;
     display:flex;
-
+    align-content: center;
 }
 
 img {
@@ -36,15 +49,26 @@ img {
 }
 .navigation1{
     grid-area: na1;
+    background-color: lightyellow;
+
+    display:flex;
+    flex-direction:row-reverse;
+    
 }
 
 .aside1{
     grid-area: as1;
-    /*width: 20px; */
+    background-image: url("../img/warmth.jpg");
+    background-size: cover;
+    background-position-x: center;
+    
 }
 
 .aside2{
     grid-area: as2;
+    background-image: url("../img/warmth.jpg");
+    background-size: cover;
+    background-position-x: center;
     
 }
 
