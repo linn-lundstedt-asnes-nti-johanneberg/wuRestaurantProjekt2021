@@ -1,59 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
 *{
     margin:0px;
+}
+body {
+    font-family: 'Merienda', cursive;
 }
 
 .header1, .navigation1{
     padding: 5px;
 }
 
-
-a:link{
-    color: darkblue;
-}
-
-a:visited{
-    color: darkblue;
-}
-
 #index{
 
     display:grid;
     width:100vw;
+    max-width:100%;
     height:100vh;
 
     grid-template-areas:
     "he1 he1 he1 he1"
     "na1 na1 na1 na1"
     "as1 ma1 ma1 as2"
-    "as1 my1 my1 as2"
+    "as1 ma1 ma1 as2"
     "as1 le1 le1 as2"
     "fo1 fo1 fo1 fo1";
     grid-template-rows: 10% 5% 45% 20% 20% 10%;
-    grid-template-columns: 15% 45% 45% 15%;
-
-    
+    grid-template-columns: 10% 40% 40% 10%;   
 }
     
 .header1{
-    
+    font-family: 'Cookie', cursive;
     grid-area: he1;
-    background-color:rgb(121, 22, 212);
+    background-color: rgb(236, 150, 83);
+    color: rgb(53, 0, 155);
+    font-size: larger;
+
 
     flex-direction: row;
     display:flex;
     align-content: center;
 }
 
-img {
-    width:150px;
+.header1 img {
+    width: 85px;
 }
+
+*{
+
+}
+    
+
 .navigation1{
     grid-area: na1;
-    background-color: lightyellow;
-
+    background-color: rgb(37, 27, 23);
     display:flex;
-    flex-direction:row-reverse;
+    justify-content: flex-end;
     
+}
+
+.navigation1 a {
+    margin-left: 50px;
+}
+
+a:link{
+    color: rgb(227, 199, 233);
+    text-decoration: none;
+}
+
+a:visited{
+    color: rgb(227, 199, 233);
+    text-decoration: none;
 }
 
 .aside1{
@@ -74,24 +91,70 @@ img {
 
 .main1{
     grid-area: ma1;
+    background-color: rgb(255, 221, 183);
+
+    display:flex;
+    justify-content: space-between;
 }
 
-#wrapper_for_mysteries1{
-    grid-area: my1;
+.main1 #info {
+
+    flex-direction: column; 
+    font-size: larger; 
+    margin: 25px;
+    align-content: space-around;
+}
+
+.main1 p {
+    margin-bottom: 20px;
+}
+
+.main1 img {
+    width:300px;
+    height: 250px;
+    outline-style: solid;
+    outline-color: rgb(158, 4, 4);;
+    margin: 50px;
+
+    flex-direction: column;
+
 }
 
 .legalities1{
     grid-area: le1;
+    background-color: rgb(255, 221, 183);
+}
+
+.legalities1 h4 {
+    margin-left: 20px;
+}
+
+.legalities1 #list{
+    border: solid;
+    border-color: black;
+    border-radius: 10px;
+    margin: 25px;
+    background-color: rgb(158, 4, 4);
+    color: rgb(255, 221, 183);
+    width: 55%;
 }
 
 .footer1{
     grid-area: fo1;
+    background-color: rgb(37, 27, 23);
+    display: flex;
+    justify-content: space-around;
+
+}
+.footer1 img {
+    width:60px;
 }
 
 
 
 
-.meny{
+#meny{
+
 
 }
 
