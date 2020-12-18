@@ -7,7 +7,7 @@ body {
     font-family: 'Merienda', cursive;
 }
 
-.header1, .navigation1{
+.header, .navigation{
     padding: 5px;
 }
 
@@ -29,7 +29,7 @@ body {
     grid-template-columns: 10% 40% 40% 10%;   
 }
     
-.header1{
+.header{
     font-family: 'Cookie', cursive;
     grid-area: he1;
     background-color: rgb(236, 150, 83);
@@ -42,16 +42,11 @@ body {
     align-content: center;
 }
 
-.header1 img {
+.header img {
     width: 85px;
 }
 
-*{
-
-}
-    
-
-.navigation1{
+.navigation{
     grid-area: na1;
     background-color: rgb(37, 27, 23);
     display:flex;
@@ -59,7 +54,7 @@ body {
     
 }
 
-.navigation1 a {
+.navigation a {
     margin-left: 50px;
 }
 
@@ -117,19 +112,18 @@ a:visited{
     margin: 50px;
 
     flex-direction: column;
-
 }
 
-.legalities1{
+.legalities{
     grid-area: le1;
     background-color: rgb(255, 221, 183);
 }
 
-.legalities1 h4 {
+.legalities h4 {
     margin-left: 20px;
 }
 
-.legalities1 #list{
+.legalities #list{
     border: solid;
     border-color: black;
     border-radius: 10px;
@@ -139,14 +133,14 @@ a:visited{
     width: 55%;
 }
 
-.footer1{
+.footer{
     grid-area: fo1;
     background-color: rgb(37, 27, 23);
     display: flex;
     justify-content: space-around;
 
 }
-.footer1 img {
+.footer img {
     width:60px;
 }
 
@@ -154,11 +148,277 @@ a:visited{
 
 
 #meny{
+    display:grid;
+    width:100vw;
+    max-width:100%;
+    height:100vh;
+
+    grid-template-areas:
+    "he1 he1 he1 he1"
+    "na1 na1 na1 na1"
+    "as1 ma2 ma2 as2"
+    "as1 ma2 ma2 as2"
+    "as1 le1 le1 as2"
+    "fo1 fo1 fo1 fo1";
+
+    grid-template-rows: 10% 5% 45% 20% 20% 10%;
+    grid-template-columns: 10% 40% 40% 10%;   
+}
+
+.main2{
+    grid-area: ma2;
+    background-color: rgb(255, 221, 183);
+    padding: 10px;
+    font-size: larger;
+
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.main2 #section1{
+    background-color: rgb(255, 221, 183);
+    border: solid;
+    border-color: rgb(158, 4, 4);;
+    border-radius: 40px;
+    padding: 20px;
+    width: 350px;
+}
+
+
+.main2 #section2{
+    background-color: rgb(255, 221, 183);
+    border: solid;
+    border-color:rgb(158, 4, 4);;
+    border-radius: 40px;
+    padding: 20px;
+    width: 350px;
 
 
 }
 
-.var_vision{
+.header{
+    font-family: 'Cookie', cursive;
+    grid-area: he1;
+    background-color: rgb(236, 150, 83);
+    color: rgb(53, 0, 155);
+    font-size: larger;
 
+
+    flex-direction: row;
+    display:flex;
+    align-content: center;
+}
+
+.header img {
+    width: 85px;
+}
+
+.navigation{
+    grid-area: na1;
+    background-color: rgb(37, 27, 23);
+    display:flex;
+    justify-content: flex-end;
+    
+}
+
+.navigation a {
+    margin-left: 50px;
+}
+
+a:link{
+    color: rgb(227, 199, 233);
+    text-decoration: none;
+}
+
+a:visited{
+    color: rgb(227, 199, 233);
+    text-decoration: none;
+}
+
+.aside1{
+    grid-area: as1;
+    background-image: url("../img/warmth.jpg");
+    background-size: cover;
+    background-position-x: center;
+    
+}
+
+.aside2{
+    grid-area: as2;
+    background-image: url("../img/warmth.jpg");
+    background-size: cover;
+    background-position-x: center;
+    
+}
+
+.legalities{
+    grid-area: le1;
+    background-color: rgb(255, 221, 183);
+}
+
+.legalities h4 {
+    margin-left: 20px;
+}
+
+.legalities #list{
+    border: solid;
+    border-color: black;
+    border-radius: 10px;
+    margin: 25px;
+    background-color: rgb(158, 4, 4);
+    color: rgb(255, 221, 183);
+    width: 55%;
+}
+
+.footer{
+    grid-area: fo1;
+    background-color: rgb(37, 27, 23);
+    display: flex;
+    justify-content: space-around;
 
 }
+
+.footer img {
+    width:60px;
+}
+
+#var_vision{
+    display:grid;
+    width:100vw;
+    max-width:100%;
+    height:100vh;
+
+    grid-template-areas:
+    "he1 he1 he1 he1"
+    "na1 na1 na1 na1"
+    "ma3 ma3 ma3 ma3"
+    "ma3 ma3 ma3 ma3"
+    "ma3 ma3 ma3 ma3"
+    "fo1 fo1 fo1 fo1";
+
+    grid-template-rows: 10% 5% auto 10%;
+    grid-template-columns: 10% 40% 40% 10%;   
+}
+    
+.main3{
+    grid-area: ma3;
+    background-color: rgb(255, 221, 183);
+    padding: 10px;
+    font-size: larger;
+}
+
+.main3 #pic_n_text{
+    background-color: rgb(255, 221, 183);
+    padding: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main3 #pic_n_text img{
+    width:300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main3 .make_nice {
+    text-align: center;
+    
+}
+
+.main3 #employees{
+    background-color: rgb(255, 221, 183);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;   
+
+}
+.main3 #employees img{
+    width: 180px;
+    border: solid;
+    border-color:rgb(158, 4, 4);
+}
+
+.main3 #employees figcaption{
+    width: 300px;
+}
+
+.header{
+    font-family: 'Cookie', cursive;
+    grid-area: he1;
+    background-color: rgb(236, 150, 83);
+    color: rgb(53, 0, 155);
+    font-size: larger;
+
+
+    flex-direction: row;
+    display:flex;
+    align-content: center;
+}
+
+.header img {
+    width: 85px;
+}
+
+.navigation{
+    grid-area: na1;
+    background-color: rgb(37, 27, 23);
+    display:flex;
+    justify-content: flex-end;
+    
+}
+
+.navigation a {
+    margin-left: 50px;
+}
+
+a:link{
+    color: rgb(227, 199, 233);
+    text-decoration: none;
+}
+
+a:visited{
+    color: rgb(227, 199, 233);
+    text-decoration: none;
+}
+
+.legalities{
+    grid-area: le1;
+    background-color: rgb(255, 221, 183);
+}
+
+.legalities h4 {
+    margin-left: 20px;
+}
+
+.legalities #list{
+    border: solid;
+    border-color: black;
+    border-radius: 10px;
+    margin: 25px;
+    background-color: rgb(158, 4, 4);
+    color: rgb(255, 221, 183);
+    width: 55%;
+}
+
+.footer{
+    grid-area: fo1;
+    background-color: rgb(37, 27, 23);
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.footer img {
+    width:60px;
+}
+
+
+
